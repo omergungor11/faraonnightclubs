@@ -8,6 +8,11 @@ export function FloatingWhatsApp() {
       href="https://wa.me/905338801043?text=Merhaba,%20katalog%20ve%20fiyatlar%20hakkında%20bilgi%20almak%20istiyorum."
       target="_blank"
       rel="noopener noreferrer"
+      onClick={(e) => {
+        if (typeof window !== 'undefined' && (window as any).gtag_report_conversion) {
+          (window as any).gtag_report_conversion(e.currentTarget.href);
+        }
+      }}
       style={{
         position: 'fixed',
         bottom: '24px',

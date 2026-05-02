@@ -81,6 +81,11 @@ export function HeroSection() {
                 href="https://wa.me/905338801043"
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={(e) => {
+                  if (typeof window !== 'undefined' && (window as any).gtag_report_conversion) {
+                    (window as any).gtag_report_conversion(e.currentTarget.href);
+                  }
+                }}
               >
                 <MessageCircle className="w-5 h-5 mr-2" />
                 WhatsApp İletişim

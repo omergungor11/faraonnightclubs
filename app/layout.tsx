@@ -129,6 +129,21 @@ export default function RootLayout({
             gtag('js', new Date());
 
             gtag('config', 'AW-18124099734');
+
+            window.gtag_report_conversion = function(url) {
+              var callback = function () {
+                if (typeof(url) != 'undefined') {
+                  window.location = url;
+                }
+              };
+              gtag('event', 'conversion', {
+                  'send_to': 'AW-18124099734/nQPwCK7uuKYcEJahn8JD',
+                  'value': 1.0,
+                  'currency': 'USD',
+                  'event_callback': callback
+              });
+              return false;
+            }
           `}
         </Script>
         <Header />
