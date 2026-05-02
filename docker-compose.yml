@@ -1,0 +1,18 @@
+services:
+  faraon:
+    container_name: faraon
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    ports:
+      - "3001:3000"
+    volumes:
+      # Mount the current directory to /app in the container for hot-reloading
+      - .:/app
+      # Ignore local node_modules and .next, let the container use its own
+      - /app/node_modules
+      - /app/.next
+    environment:
+      - NODE_ENV=development
+      # Polling is sometimes needed for hot-reloading in Docker on Mac/Windows
+      - WATCHPACK_POLLING=true
