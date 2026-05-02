@@ -6,6 +6,7 @@ import './globals.css'
 import { Header } from '@/components/layout/header'
 import { Footer } from '@/components/layout/footer'
 import { FloatingWhatsApp as KatalogButton } from '@/components/katalog-button'
+import Script from 'next/script'
 
 const playfair = Playfair_Display({ 
   subsets: ["latin"],
@@ -58,16 +59,9 @@ export const metadata: Metadata = {
     locale: 'tr_TR',
     url: 'https://faraonnightclubs.com',
     siteName: 'Faraon Night Club',
-    title: 'Faraon Night Club | Kıbrıs\'ın En Özel Night Club Deneyimi',
-    description: 'Kıbrıs night club deneyiminde lüks ve kalite. Faraon Night Club ile VIP gece eğlencesi, sahne performansları ve özel hizmetler.',
-    images: [
-      {
-        url: '/og-image.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'Faraon Night Club - Kıbrıs Night Club',
-      },
-    ],
+    title: "Faraon Night Club | Kıbrıs Premium Night Club",
+    description: "Kıbrıs'ın en özel night club deneyimi.",
+    images: ["/images/logo-official.png"],
   },
   twitter: {
     card: 'summary_large_image',
@@ -123,6 +117,20 @@ export default function RootLayout({
         />
       </head>
       <body className={`${playfair.variable} ${inter.variable} font-sans antialiased min-h-screen flex flex-col`}>
+        {/* Google Tag (gtag.js) */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=AW-18124099734"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'AW-18124099734');
+          `}
+        </Script>
         <Header />
         <main className="flex-1">
           {children}
