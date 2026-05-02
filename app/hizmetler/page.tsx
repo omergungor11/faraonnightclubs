@@ -278,7 +278,7 @@ export default function ServicesPage() {
                 className="bg-primary hover:bg-primary/90 text-primary-foreground"
               >
                 <a
-                  href="https://wa.me/905551234567?text=Merhaba,%20Night%20Club%20hizmetleri%20hakkında%20bilgi%20almak%20istiyorum."
+                  href="https://wa.me/905338801043?text=Merhaba,%20Night%20Club%20hizmetleri%20hakkında%20bilgi%20almak%20istiyorum."
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -292,7 +292,7 @@ export default function ServicesPage() {
                 variant="outline"
                 className="border-gold/50 text-gold hover:bg-gold/10 bg-transparent"
               >
-                <a href="tel:+905551234567">
+                <a href="tel:905338801043">
                   <Phone className="w-5 h-5 mr-2" />
                   +90 555 123 45 67
                 </a>

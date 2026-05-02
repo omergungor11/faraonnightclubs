@@ -157,7 +157,7 @@ export default function BlogPostClient({ post }: { post: BlogPost }) {
                   className="bg-white text-foreground hover:bg-gold/10 h-14 px-8 text-base font-semibold shadow-lg shadow-white/10"
                 >
                   <a
-                    href="https://wa.me/905551234567"
+                    href="https://wa.me/905338801043"
                     target="_blank"
                     rel="noopener noreferrer"
                   >

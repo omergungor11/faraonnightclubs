@@ -78,7 +78,7 @@ export function HeroSection() {
               className="w-full sm:w-auto border-gold/50 hover:bg-gold/10 hover:border-gold text-lg px-8 py-6 bg-transparent text-primary"
             >
               <a
-                href="https://wa.me/905551234567"
+                href="https://wa.me/905338801043"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -92,7 +92,7 @@ export function HeroSection() {
               variant="outline"
               className="w-full sm:w-auto border-border text-foreground hover:bg-muted text-lg px-8 py-6 bg-transparent"
             >
-              <a href="tel:+905551234567">
+              <a href="tel:905338801043">
                 <Phone className="w-5 h-5 mr-2" />
                 Hemen Ara
               </a>

@@ -208,7 +208,7 @@ export default function RehberClient({
                     className="w-full bg-gradient-to-r from-gold to-gold-dark hover:from-gold-dark hover:to-gold-dark text-white shadow-lg shadow-gold/20 border-0"
                   >
                     <a
-                      href="https://wa.me/905551234567"
+                      href="https://wa.me/905338801043"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -406,7 +406,7 @@ export default function RehberClient({
                   className="bg-white text-foreground hover:bg-gold/10 h-14 px-8 text-base font-semibold shadow-lg shadow-white/10"
                 >
                   <a
-                    href="https://wa.me/905551234567"
+                    href="https://wa.me/905338801043"
                     target="_blank"
                     rel="noopener noreferrer"
                   >

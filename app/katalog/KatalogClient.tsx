@@ -175,7 +175,7 @@ export default function KatalogClient() {
                     className="w-full bg-gold/10 hover:bg-gold text-gold hover:text-black border border-gold/30 transition-all duration-500 rounded-xl"
                   >
                     <a
-                      href={`https://wa.me/905551234567?text=Merhaba,%20${club.name}%20hakkında%20bilgi%20almak%20istiyorum.`}
+                      href={`https://wa.me/905338801043?text=Merhaba,%20${club.name}%20hakkında%20bilgi%20almak%20istiyorum.`}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center justify-center gap-2"
@@ -200,7 +200,7 @@ export default function KatalogClient() {
               size="lg"
               className="bg-gradient-to-r from-gold to-gold-dark hover:from-gold-dark hover:to-gold-dark text-white font-bold h-14 px-10 rounded-full shadow-xl shadow-gold/20"
             >
-              <a href="https://wa.me/905551234567?text=Merhaba,%20Kıbrıs%20kulüplerinin%20tam%20katalog%20listesini%20talep%20ediyorum." target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/905338801043?text=Merhaba,%20Kıbrıs%20kulüplerinin%20tam%20katalog%20listesini%20talep%20ediyorum." target="_blank" rel="noopener noreferrer">
                 Tüm Kulüpler İçin İletişime Geçin
               </a>
             </Button>
@@ -298,7 +298,7 @@ export default function KatalogClient() {
                   className="bg-gold text-black hover:bg-gold-dark h-14 px-8 text-base font-bold shadow-lg shadow-gold/20"
                 >
                   <a
-                    href="https://wa.me/905551234567?text=Merhaba,%20Kıbrıs%20Night%20Club%20Katalog%20hakkında%20detaylı%20bilgi%20ve%20görsel%20talep%20ediyorum."
+                    href="https://wa.me/905338801043?text=Merhaba,%20Kıbrıs%20Night%20Club%20Katalog%20hakkında%20detaylı%20bilgi%20ve%20görsel%20talep%20ediyorum."
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -312,7 +312,7 @@ export default function KatalogClient() {
                   variant="outline"
                   className="border-white/30 text-white hover:bg-white/10 bg-transparent h-14 px-8 text-base font-bold backdrop-blur-sm"
                 >
-                  <a href="tel:+905551234567">
+                  <a href="tel:905338801043">
                     <Phone className="w-5 h-5 mr-2" />
                     Hemen Arayın
                   </a>

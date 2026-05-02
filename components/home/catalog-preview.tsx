@@ -103,7 +103,7 @@ export function CatalogPreview() {
                 className="border-gold/50 text-gold hover:bg-gold/10 bg-transparent"
               >
                 <a
-                  href="https://wa.me/905551234567?text=Merhaba,%20Night%20Club%20Katalog%20hakkında%20bilgi%20almak%20istiyorum."
+                  href="https://wa.me/905338801043?text=Merhaba,%20Night%20Club%20Katalog%20hakkında%20bilgi%20almak%20istiyorum."
                   target="_blank"
                   rel="noopener noreferrer"
                 >

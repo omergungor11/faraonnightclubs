@@ -41,7 +41,7 @@ export function Footer() {
             </p>
             <div className="flex gap-4">
               <a
-                href="https://wa.me/905551234567"
+                href="https://wa.me/905338801043"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-muted flex items-center justify-center text-foreground hover:bg-gold hover:text-background transition-colors"
@@ -52,7 +52,7 @@ export function Footer() {
                 </svg>
               </a>
               <a
-                href="tel:+905551234567"
+                href="tel:905338801043"
                 className="w-10 h-10 rounded-full bg-muted flex items-center justify-center text-foreground hover:bg-gold hover:text-background transition-colors"
                 aria-label="Telefon"
               >
@@ -109,7 +109,7 @@ export function Footer() {
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-gold shrink-0" />
                 <a
-                  href="tel:+905551234567"
+                  href="tel:905338801043"
                   className="text-muted-foreground hover:text-gold transition-colors text-sm"
                 >
                   +90 555 123 45 67
