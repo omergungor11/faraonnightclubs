@@ -62,7 +62,7 @@ const FAQS = [
   {
     question: "Faraon Night Club saat kaçta açılıyor?",
     answer:
-      "Faraon Night Club haftanın yedi günü açıktır. Pazartesi, Salı, Çarşamba, Perşembe ve Pazar günleri 21:00-04:00; Cuma ve Cumartesi günleri 21:00-06:00 saatleri arasında hizmet veriyoruz. En yoğun saatlerimiz 00:00 ile 03:00 arasıdır. Özel günlerde saatlerde değişiklik olabileceği için WhatsApp hattımızdan teyit etmenizi öneririz.",
+      "Faraon Night Club haftanın yedi günü, her gün 08:00 - 01:00 saatleri arasında açıktır. Bunun yanında program rezervasyonu yapan misafirlerimiz için gece programları düzenlenir; bu programlar genellikle 01:00 civarında başlayıp sabah 07:00'ye kadar sürer. Gece programlarının saatleri rezervasyona göre değiştiğinden kesin saat için WhatsApp hattımızdan teyit almanızı öneririz.",
   },
   {
     question: "Ödeme nasıl yapılıyor?",
@@ -190,9 +190,16 @@ const tableRows = [
 ]
 
 const hoursRows = [
-  { gun: "Pazartesi - Perşembe", saat: "21:00 - 04:00", yogun: "00:00 - 02:00" },
-  { gun: "Cuma - Cumartesi", saat: "21:00 - 06:00", yogun: "00:00 - 03:00" },
-  { gun: "Pazar", saat: "21:00 - 04:00", yogun: "00:00 - 02:00" },
+  {
+    gun: "Her gün",
+    saat: "08:00 - 01:00",
+    aciklama: "Düzenli çalışma saatlerimiz. Rezervasyonla masa ve özel oda hizmeti verilir.",
+  },
+  {
+    gun: "Gece programları",
+    saat: "01:00 - 07:00",
+    aciklama: "Program rezervasyonu yapan misafirler için düzenlenir; saatler programa göre değişir.",
+  },
 ]
 
 const reasons = [
@@ -746,24 +753,25 @@ export default function NightClubPage() {
               <span className="text-gradient-gold">saatlerimiz nedir?</span>
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              Faraon Night Club haftanın yedi günü açıktır. Pazartesi, Salı,
-              Çarşamba, Perşembe ve Pazar günleri 21:00-04:00; Cuma ve Cumartesi
-              günleri 21:00-06:00 saatleri arasında hizmet veriyoruz. Salonun en
-              yoğun olduğu aralık 00:00 ile 03:00 arasıdır; sahne performansları da
-              bu saatlerde yoğunlaşır. Özel günlerde saatlerde değişiklik
-              olabileceğinden geliş öncesi teyit almanızı öneririz.
+              Faraon Night Club haftanın yedi günü, her gün 08:00 - 01:00 saatleri
+              arasında açıktır. Bunun dışında, program rezervasyonu yapan
+              misafirlerimiz için gece programları düzenlenir; bu programlar
+              genellikle 01:00 civarında başlayıp sabah 07:00&apos;ye kadar sürer.
+              Gece programlarının saatleri rezervasyona ve programın içeriğine göre
+              değiştiği için, kesin saatleri WhatsApp hattımızdan teyit etmenizi
+              öneririz.
             </p>
 
             <div className="overflow-x-auto rounded-2xl border border-border mb-6">
               <table className="w-full text-left border-collapse min-w-[640px]">
                 <caption className="sr-only">
-                  Faraon Night Club haftalık çalışma saatleri ve en yoğun saat aralıkları
+                  Faraon Night Club çalışma saatleri ve gece programı saatleri
                 </caption>
                 <thead className="bg-muted/50">
                   <tr>
                     <th scope="col" className="px-5 py-4 text-sm font-semibold text-gold">Gün</th>
-                    <th scope="col" className="px-5 py-4 text-sm font-semibold text-gold">Açılış - Kapanış</th>
-                    <th scope="col" className="px-5 py-4 text-sm font-semibold text-gold">En Yoğun Saatler</th>
+                    <th scope="col" className="px-5 py-4 text-sm font-semibold text-gold">Saat Aralığı</th>
+                    <th scope="col" className="px-5 py-4 text-sm font-semibold text-gold">Açıklama</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -773,7 +781,7 @@ export default function NightClubPage() {
                         {row.gun}
                       </th>
                       <td className="px-5 py-4 text-sm text-muted-foreground">{row.saat}</td>
-                      <td className="px-5 py-4 text-sm text-muted-foreground">{row.yogun}</td>
+                      <td className="px-5 py-4 text-sm text-muted-foreground">{row.aciklama}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -781,9 +789,9 @@ export default function NightClubPage() {
             </div>
 
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              Erken gelmek isteyen misafirlerimiz için 21:00-23:00 aralığı daha sakin
-              bir ortam sunar; sahne programının tamamını izlemek isteyenler için
-              00:00 sonrası uygundur. Masa rezervasyonlarında geliş saatini önceden
+              Gündüz ve akşam saatleri daha sakin bir ortam sunar; gece programına
+              katılmak isteyen misafirlerimizin ise rezervasyonlarını önceden
+              yaptırmaları gerekir. Masa rezervasyonlarında geliş saatini önceden
               bildirmeniz, masanızın sizin için ne kadar süre tutulacağını netleştirir.
             </p>
           </div>
@@ -858,18 +866,18 @@ export default function NightClubPage() {
               <div className="grid grid-cols-2 gap-4">
                 <div className="p-6 rounded-xl bg-card border border-border text-center">
                   <Clock className="w-8 h-8 text-gold mx-auto mb-3" />
-                  <p className="text-2xl font-bold text-foreground mb-1">21:00</p>
+                  <p className="text-2xl font-bold text-foreground mb-1">08:00</p>
                   <p className="text-sm text-muted-foreground">Her Gün Açılış</p>
                 </div>
                 <div className="p-6 rounded-xl bg-card border border-border text-center">
                   <Clock className="w-8 h-8 text-gold mx-auto mb-3" />
-                  <p className="text-2xl font-bold text-foreground mb-1">04:00</p>
-                  <p className="text-sm text-muted-foreground">Pazartesi-Perşembe ve Pazar Kapanış</p>
+                  <p className="text-2xl font-bold text-foreground mb-1">01:00</p>
+                  <p className="text-sm text-muted-foreground">Her Gün Kapanış</p>
                 </div>
                 <div className="p-6 rounded-xl bg-card border border-border text-center col-span-2">
                   <Star className="w-8 h-8 text-gold mx-auto mb-3" />
-                  <p className="text-2xl font-bold text-foreground mb-1">06:00</p>
-                  <p className="text-sm text-muted-foreground">Cuma-Cumartesi Kapanış</p>
+                  <p className="text-2xl font-bold text-foreground mb-1">01:00 - 07:00</p>
+                  <p className="text-sm text-muted-foreground">Gece Programı Saatleri</p>
                 </div>
               </div>
             </div>

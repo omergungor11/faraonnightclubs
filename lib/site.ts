@@ -27,23 +27,42 @@ export function waLink(text?: string): string {
 }
 
 /**
- * Opening hours. `closes` earlier than `opens` denotes an overnight span and is
- * valid schema.org — do not "fix" it.
+ * Regular opening hours: every day, 08:00 to 01:00 the following morning.
+ * `closes` earlier than `opens` denotes an overnight span and is valid
+ * schema.org — do not "fix" it.
  */
 export const OPENING_HOURS = [
   {
-    days: ["Monday", "Tuesday", "Wednesday", "Thursday", "Sunday"],
-    daysTr: "Pazartesi - Perşembe, Pazar",
-    opens: "21:00",
-    closes: "04:00",
-  },
-  {
-    days: ["Friday", "Saturday"],
-    daysTr: "Cuma - Cumartesi",
-    opens: "21:00",
-    closes: "06:00",
+    days: [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday",
+    ],
+    daysTr: "Her gün",
+    opens: "08:00",
+    closes: "01:00",
   },
 ] as const;
+
+/**
+ * Night programmes run outside the regular hours for guests who have booked
+ * one — typically starting around 01:00 and running to about 07:00, but the
+ * times move with the booking.
+ *
+ * Deliberately NOT part of OPENING_HOURS: they are variable, and encoding
+ * variable hours as a fixed `openingHoursSpecification` would make the markup
+ * contradict reality. Describe them in visible copy instead.
+ */
+export const NIGHT_PROGRAM = {
+  opens: "01:00",
+  closes: "07:00",
+  noteTr:
+    "Program rezervasyonu yapan misafirler için düzenlenen gece programları genellikle 01:00 civarında başlayıp sabah 07:00'ye kadar sürer. Saatler programa ve rezervasyona göre değişir.",
+} as const;
 
 /**
  * Address and geo coordinates.
@@ -56,20 +75,32 @@ export const OPENING_HOURS = [
  */
 export const ADDRESS = {
   streetAddress: "",
-  addressLocality: "Girne",
-  addressRegion: "Girne",
+  addressLocality: "Alayköy",
+  addressRegion: "Lefkoşa",
   postalCode: "",
   addressCountry: "CY",
 } as const;
 
-export const GEO: { latitude: number; longitude: number } | null = null;
+/**
+ * Village-level coordinates for Alayköy (Lefkoşa district), not a surveyed pin
+ * on the building.
+ *
+ * TODO: replace with the venue's exact Google Maps coordinates. Google cross-
+ * checks `geo` against the Business Profile, so a centroid a few hundred
+ * metres off is tolerable but the exact pin is better.
+ */
+export const GEO: { latitude: number; longitude: number } | null = {
+  latitude: 35.1667,
+  longitude: 33.2333,
+};
 
 /** Verified social/profile URLs only. An invented profile URL is a spam signal. */
 export const SAME_AS: string[] = [];
 
+/** Home region first. */
 export const AREA_SERVED = [
-  "Girne",
   "Lefkoşa",
+  "Girne",
   "Gazimağusa",
   "İskele",
   "Güzelyurt",

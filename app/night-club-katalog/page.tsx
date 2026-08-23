@@ -913,18 +913,18 @@ export default function NightClubKatalogPage() {
               {[
                 {
                   icon: Clock,
-                  title: "Pazartesi - Perşembe, Pazar",
-                  text: "21:00 - 04:00",
+                  title: "Her gün",
+                  text: "08:00 - 01:00",
                 },
                 {
                   icon: Clock,
-                  title: "Cuma - Cumartesi",
-                  text: "21:00 - 06:00",
+                  title: "Gece programları",
+                  text: "01:00 - 07:00",
                 },
                 {
                   icon: Users,
-                  title: "En yoğun saat aralığı",
-                  text: "00:00 - 03:00",
+                  title: "Gece programı rezervasyonu",
+                  text: "WhatsApp ile teyit",
                 },
               ].map((item) => (
                 <div

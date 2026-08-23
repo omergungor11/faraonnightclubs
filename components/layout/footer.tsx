@@ -106,7 +106,7 @@ export function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-gold shrink-0 mt-0.5" />
                 <span className="text-muted-foreground text-sm">
-                  Kıbrıs, Girne
+                  Alayköy, Lefkoşa - KKTC
                 </span>
               </li>
               <li className="flex items-center gap-3">
@@ -130,7 +130,7 @@ export function Footer() {
               <li className="flex items-center gap-3">
                 <Clock className="w-5 h-5 text-gold shrink-0" />
                 <span className="text-muted-foreground text-sm">
-                  Her gün 21:00 - 05:00
+                  Her gün 08:00 - 01:00
                 </span>
               </li>
             </ul>

@@ -1,11 +1,15 @@
 # Faraon Night Club
 
-> Kuzey Kıbrıs'ta (KKTC) faaliyet gösteren, 18 yaş üstü misafirlere hizmet veren
-> ruhsatlı gece kulübü. Masa ve özel oda düzeninde çalışır, rezervasyonla hizmet verir.
+> Kuzey Kıbrıs'ta (KKTC), Lefkoşa'ya bağlı Alayköy'de faaliyet gösteren, 18 yaş üstü
+> misafirlere hizmet veren ruhsatlı gece kulübü. Masa ve özel oda düzeninde çalışır,
+> rezervasyonla hizmet verir.
 > İletişim ve rezervasyon: +90 542 885 75 75 (telefon ve WhatsApp).
 
-Çalışma saatleri: Pazartesi-Perşembe ve Pazar 21:00-04:00, Cuma-Cumartesi 21:00-06:00.
-Dil: Türkçe. Bölge: Girne, Lefkoşa, Gazimağusa, İskele, Güzelyurt.
+Konum: Alayköy, Lefkoşa - KKTC.
+Çalışma saatleri: her gün 08:00-01:00. Program rezervasyonu yapan misafirler için
+düzenlenen gece programları genellikle 01:00-07:00 arasındadır; saatler rezervasyona
+göre değişir.
+Dil: Türkçe. Hizmet verilen bölgeler: Lefkoşa, Girne, Gazimağusa, İskele, Güzelyurt.
 
 ## Rehber içerikleri
 

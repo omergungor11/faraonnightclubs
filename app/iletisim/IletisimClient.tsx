@@ -80,9 +80,8 @@ export default function IletisimClient() {
   ];
 
   const workingHours = [
-    { day: "Pazartesi - Perşembe", hours: "21:00 - 04:00" },
-    { day: "Cuma - Cumartesi", hours: "21:00 - 06:00" },
-    { day: "Pazar", hours: "21:00 - 04:00" },
+    { day: "Her gün", hours: "08:00 - 01:00" },
+    { day: "Gece programları", hours: "01:00 - 07:00" },
   ];
 
   const faqItems = [

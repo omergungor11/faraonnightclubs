@@ -1157,10 +1157,10 @@ export default function KibrisGeceHayatiPage() {
                   Çalışma saatlerimiz
                 </h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  Faraon Night Club haftanın yedi günü açıktır: Pazartesi-Perşembe ve
-                  Pazar günleri 21:00-04:00, Cuma ve Cumartesi günleri 21:00-06:00
-                  saatleri arasında hizmet verir. En yoğun saat aralığımız 00:00-03:00
-                  arasıdır.
+                  Faraon Night Club haftanın yedi günü, her gün 08:00 - 01:00
+                  saatleri arasında açıktır. Program rezervasyonu yapan
+                  misafirlerimiz için düzenlenen gece programları ise genellikle
+                  01:00 civarında başlayıp sabah 07:00&apos;ye kadar sürer.
                 </p>
               </div>
 

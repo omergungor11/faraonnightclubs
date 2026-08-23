@@ -221,7 +221,7 @@ const FAQS = [
   {
     question: "Kıbrıs'ta night club'lar saat kaça kadar açık?",
     answer:
-      "Faraon Night Club haftanın yedi günü açıktır: Pazartesi-Perşembe ve Pazar günleri 21:00-04:00, Cuma ve Cumartesi günleri 21:00-06:00 saatleri arasında hizmet verir. En yoğun saatler 00:00-03:00 arasıdır. Sezon dışında bazı mekanlar programını daraltabileceği için gitmeyi planladığınız günün saatlerini önceden teyit etmeniz doğru olur.",
+      "Kıbrıs'ta night club'ların çoğu akşam saatlerinde açılıp sabaha karşı kapanır; en yoğun aralık genellikle 00:00-03:00 arasındadır. Faraon Night Club ise haftanın yedi günü 08:00 - 01:00 saatleri arasında açıktır ve program rezervasyonu yapan misafirler için 01:00-07:00 aralığında gece programları düzenler. Saatler programa göre değiştiği için gitmeden önce teyit almanız doğru olur.",
   },
   {
     question: "Night club'a yalnız gitmek uygun mu?",
@@ -480,6 +480,15 @@ export default function KibrisNightClubPage() {
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
               {
                 "Lefkoşa, KKTC'nin başkenti olduğu için gece kulübü talebi turizm sezonuna değil şehrin kendi ritmine bağlıdır. İş seyahati trafiği, kamu ve özel sektör yoğunluğu ve kalabalık yerel nüfus, hafta içi geceleri bile ayakta tutar. Bu nedenle Lefkoşa, yıl boyu en istikrarlı bölgedir; yaz ile kış arasındaki fark diğer şehirlere göre belirgin biçimde daha azdır."
+              }
+            </p>
+            <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+              {"Bu rehberi yayımlayan "}
+              <Link href="/night-club" className={LINK_CLASS}>
+                Faraon Night Club
+              </Link>
+              {
+                " da Lefkoşa'ya bağlı Alayköy'de hizmet vermektedir. Şehir merkezine ve çevre bölgelere araçla ulaşım kolaydır; rezervasyon sırasında kalacağınız bölgeyi bildirmeniz halinde transfer düzenlemesine yardımcı olunur."
               }
             </p>
 
@@ -893,7 +902,7 @@ export default function KibrisNightClubPage() {
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
               {
-                "Faraon Night Club, Kuzey Kıbrıs'ta Girne merkezli olarak hizmet veren ruhsatlı bir gece kulübüdür ve Girne, Lefkoşa, Gazimağusa, İskele ile Güzelyurt bölgelerinden gelen misafirleri ağırlar. Mekan haftanın yedi günü açıktır: Pazartesi, Salı, Çarşamba, Perşembe ve Pazar günleri 21:00-04:00; Cuma ve Cumartesi günleri 21:00-06:00 saatleri arasında hizmet verir."
+                "Faraon Night Club, Kuzey Kıbrıs'ta Lefkoşa'ya bağlı Alayköy'de hizmet veren ruhsatlı bir gece kulübüdür ve Lefkoşa, Girne, Gazimağusa, İskele ile Güzelyurt bölgelerinden gelen misafirleri ağırlar. Mekan haftanın yedi günü, her gün 08:00 - 01:00 saatleri arasında açıktır. Bunun dışında program rezervasyonu yapan misafirler için gece programları düzenlenir; bu programlar genellikle 01:00 civarında başlayıp sabah 07:00'ye kadar sürer ve saatleri rezervasyona göre değişir."
               }
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed">
@@ -999,7 +1008,7 @@ export default function KibrisNightClubPage() {
               <Clock className="w-4 h-4 text-gold shrink-0" />
               <span>
                 {
-                  "Pazartesi - Perşembe, Pazar: 21:00-04:00 · Cuma - Cumartesi: 21:00-06:00"
+                  "Her gün: 08:00 - 01:00 · Gece programları: 01:00 - 07:00"
                 }
               </span>
             </p>
