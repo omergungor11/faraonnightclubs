@@ -2,10 +2,13 @@ import Link from "next/link"
 import { Phone, Mail, MapPin, Clock } from "lucide-react"
 
 const quickLinks = [
-  { name: "Night Club", href: "/night-club" },
-  { name: "Night Club Katalog", href: "/katalog" },
+  { name: "Faraon Night Club", href: "/night-club" },
+  { name: "Kıbrıs Night Club Rehberi", href: "/kibris-night-club" },
+  { name: "Kıbrıs Gece Hayatı", href: "/kibris-gece-hayati" },
+  { name: "Night Club Katalog", href: "/night-club-katalog" },
+  { name: "Kulüp Kataloğu", href: "/katalog" },
   { name: "Hizmetlerimiz", href: "/hizmetler" },
-  { name: "Kıbrıs Night Club Rehberi", href: "/rehber" },
+  { name: "Rehber Yazıları", href: "/rehber" },
   { name: "Hakkımızda", href: "/hakkimizda" },
   { name: "İletişim", href: "/iletisim" },
 ]

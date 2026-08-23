@@ -18,9 +18,10 @@ export function HeroSection() {
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
-          src="/images/hero-main.jpg?v=2"
+          src="/images/hero-main.jpg"
           alt="Faraon Night Club - Kıbrıs Night Club Atmosferi"
           fill
+          sizes="100vw"
           className="object-cover object-center"
           priority
           quality={85}

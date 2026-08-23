@@ -87,7 +87,7 @@ const FAQS = [
 ]
 
 export const metadata: Metadata = {
-  title: TITLE,
+  title: { absolute: "Faraon Night Club | VIP Rezervasyon ve Gece Eğlencesi" },
   description: DESCRIPTION,
   keywords: [
     "faraon night club",

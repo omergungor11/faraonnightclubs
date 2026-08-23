@@ -18,7 +18,7 @@ import {
   Target,
 } from "lucide-react";
 
-export default function HakkimizdaPage() {
+export default function HakkimizdaClient() {
   const values = [
     {
       icon: Crown,
@@ -96,7 +96,7 @@ export default function HakkimizdaPage() {
             </span>
             <h1 className="mb-6 text-4xl font-bold tracking-tight text-balance md:text-6xl font-serif text-foreground">
               Faraon Night Club
-              <span className="block mt-2 text-transparent ">
+              <span className="block mt-2 text-gradient-gold">
                 Hakkımızda
               </span>
             </h1>
@@ -166,6 +166,7 @@ export default function HakkimizdaPage() {
                   src="/images/about-hero.jpg"
                   alt="Faraon Night Club - Kıbrıs Night Club İç Mekan"
                   fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
                   className="object-cover"
                 />
               </div>
@@ -198,7 +199,7 @@ export default function HakkimizdaPage() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="text-center"
               >
-                <p className="text-4xl font-bold text-transparent md:text-5xl ">
+                <p className="text-4xl font-bold text-gradient-gold md:text-5xl">
                   {stat.value}
                 </p>
                 <p className="mt-2 text-muted-foreground">{stat.label}</p>

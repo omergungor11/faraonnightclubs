@@ -15,9 +15,11 @@ import {
   Star
 } from "lucide-react"
 import Link from "next/link"
+import { JsonLd } from "@/components/seo/json-ld"
+import { breadcrumbNode, graph, webPageNode } from "@/lib/schema"
 
 export const metadata: Metadata = {
-  title: "Night Club Hizmetleri | VIP Eğlence & Organizasyon",
+  title: { absolute: "Night Club Hizmetleri | Faraon Night Club" },
   description: "Faraon Night Club hizmetleri - VIP gece eğlencesi, özel organizasyonlar, transfer ve konaklama hizmetleri. Kıbrıs night club deneyiminizi tamamlayan premium hizmetler.",
   keywords: [
     "night club hizmetleri",
@@ -28,9 +30,15 @@ export const metadata: Metadata = {
     "özel organizasyon",
     "faraon night club",
   ],
+  alternates: { canonical: "/hizmetler" },
   openGraph: {
+    type: "website",
+    locale: "tr_TR",
+    siteName: "Faraon Night Club",
+    url: "/hizmetler",
     title: "Night Club Hizmetleri | Faraon Night Club",
     description: "VIP eğlence, transfer, konaklama ve özel organizasyon hizmetleri.",
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Faraon Night Club Kıbrıs" }],
   },
 }
 
@@ -106,6 +114,22 @@ const additionalServices = [
 export default function ServicesPage() {
   return (
     <article className="pt-20">
+      <JsonLd
+        id="ld-hizmetler"
+        data={graph(
+          webPageNode({
+            path: "/hizmetler",
+            name: "Night Club Hizmetleri | Faraon Night Club",
+            description:
+              "VIP eğlence, transfer, konaklama ve özel organizasyon hizmetleri.",
+          }),
+          breadcrumbNode("/hizmetler", [
+            { name: "Ana Sayfa", path: "/" },
+            { name: "Hizmetler" },
+          ]),
+        )}
+      />
+
       {/* Hero Section */}
       <section className="py-16 md:py-24 relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(139,69,69,0.15),transparent_50%)]" />

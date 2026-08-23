@@ -29,7 +29,7 @@ import {
   Sparkles,
 } from "lucide-react";
 
-export default function IletisimPage() {
+export default function IletisimClient() {
   const [formStatus, setFormStatus] = useState<"idle" | "success">("idle");
   const [formData, setFormData] = useState({
     name: "",
@@ -126,7 +126,7 @@ export default function IletisimPage() {
             </span>
             <h1 className="mb-6 text-4xl font-bold tracking-tight text-balance md:text-6xl font-serif text-foreground">
               Faraon Night Club
-              <span className="block mt-2 text-transparent ">
+              <span className="block mt-2 text-gradient-gold">
                 İletişim
               </span>
             </h1>

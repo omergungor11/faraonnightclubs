@@ -61,7 +61,7 @@ export default function RehberClient({
             </span>
             <h1 className="mb-6 text-4xl font-bold tracking-tight text-balance md:text-6xl font-serif text-foreground">
               Kıbrıs Night Club
-              <span className="block mt-2 text-transparent ">
+              <span className="block mt-2 text-gradient-gold">
                 Rehberi
               </span>
             </h1>
@@ -307,7 +307,7 @@ export default function RehberClient({
               className="prose prose-invert max-w-none"
             >
               <h2 className="text-3xl font-bold font-serif text-foreground mb-8 text-center">
-                <span className="text-transparent ">
+                <span className="text-gradient-gold">
                   Kıbrıs Night Club
                 </span>{" "}
                 Hakkında Bilmeniz Gerekenler

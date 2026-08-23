@@ -1,6 +1,8 @@
 import type { Metadata } from "next"
 import { notFound } from "next/navigation";
 import BlogPostClient from "./BlogPostClient";
+import { JsonLd } from "@/components/seo/json-ld";
+import { abs, blogPostingNode, breadcrumbNode, graph, webPageNode } from "@/lib/schema";
 
 const blogPosts = [
   {
@@ -230,11 +232,18 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       "faraon night club",
       post.category.toLowerCase(),
     ],
+    alternates: { canonical: `/rehber/${post.slug}` },
     openGraph: {
+      type: "article",
+      locale: "tr_TR",
+      siteName: "Faraon Night Club",
+      url: `/rehber/${post.slug}`,
       title: post.title,
       description: post.excerpt,
-      type: "article",
       publishedTime: post.date,
+      images: [
+        { url: "/og-image.jpg", width: 1200, height: 630, alt: "Faraon Night Club Kıbrıs" },
+      ],
     },
   }
 }
@@ -253,5 +262,33 @@ export default async function BlogPostPage({ params }: Props) {
     notFound()
   }
 
-  return <BlogPostClient post={post} />;
+  const path = `/rehber/${post.slug}`
+
+  return (
+    <>
+      <JsonLd
+        id="ld-blog-post"
+        data={graph(
+          webPageNode({
+            path,
+            name: post.title,
+            description: post.excerpt,
+            extra: { mainEntity: { "@id": `${abs(path)}#article` } },
+          }),
+          breadcrumbNode(path, [
+            { name: "Ana Sayfa", path: "/" },
+            { name: "Rehber", path: "/rehber" },
+            { name: post.title },
+          ]),
+          blogPostingNode({
+            path,
+            headline: post.title,
+            description: post.excerpt,
+            datePublished: post.date,
+          }),
+        )}
+      />
+      <BlogPostClient post={post} />
+    </>
+  );
 }

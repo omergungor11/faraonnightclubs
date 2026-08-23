@@ -118,7 +118,7 @@ export function CatalogPreview() {
           <div className="flex justify-center lg:justify-end">
             <div className="relative group overflow-hidden rounded-2xl border border-gold/10 shadow-xl max-w-[360px] transition-all duration-500 hover:border-gold/30">
               <Image 
-                src="/images/kibris-gece-hayati-5.jpg?v=2" 
+                src="/images/kibris-gece-hayati-5.jpg" 
                 alt="Kıbrıs Night Club Katalog Seçenekleri" 
                 width={800} 
                 height={450}

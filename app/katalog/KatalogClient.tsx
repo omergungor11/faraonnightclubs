@@ -103,7 +103,7 @@ export default function KatalogClient() {
             {/* Photo Box under heading */}
             <div className="mb-8 relative group overflow-hidden rounded-2xl border border-gold/20 shadow-2xl shadow-gold/10 max-w-2xl mx-auto transition-all duration-500 hover:border-gold/40">
               <Image 
-                src="/images/hero-main.jpg?v=2" 
+                src="/images/hero-main.jpg" 
                 alt="Kıbrıs Night Club Premium Katalog" 
                 width={1200} 
                 height={600}
@@ -141,6 +141,7 @@ export default function KatalogClient() {
                     src={`/images/clubs/club-${club.id}.jpg`}
                     alt={club.name}
                     fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     className="object-cover transition-transform duration-700 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent opacity-80" />
@@ -223,7 +224,7 @@ export default function KatalogClient() {
             
             <div className="not-prose mb-12 relative group overflow-hidden rounded-2xl border border-gold/20 shadow-2xl shadow-gold/5 max-w-2xl mx-auto transition-all duration-500 hover:border-gold/40 hover:shadow-gold/10">
               <Image 
-                src="/images/kibris-gece-hayati-17.jpg?v=2" 
+                src="/images/kibris-gece-hayati-17.jpg" 
                 alt="Kıbrıs Night Club Katalog Seçenekleri" 
                 width={1200} 
                 height={675}

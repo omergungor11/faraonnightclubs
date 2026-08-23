@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import RehberClient from "./RehberClient";
+import { JsonLd } from "@/components/seo/json-ld";
+import { breadcrumbNode, graph, webPageNode } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Kıbrıs Night Club Rehberi | Gece Hayatı Rehberi",
+  title: { absolute: "Kıbrıs Night Club Rehberi | Faraon Night Club" },
   description:
     "Kıbrıs night club rehberi - Gece hayatı, VIP eğlence rehberleri, night club kültürü ve Kıbrıs eğlence mekanları hakkında detaylı bilgiler. Faraon Night Club blog.",
   keywords: [
@@ -14,9 +16,15 @@ export const metadata: Metadata = {
     "gece hayatı rehberi",
     "faraon night club",
   ],
+  alternates: { canonical: "/rehber" },
   openGraph: {
+    type: "website",
+    locale: "tr_TR",
+    siteName: "Faraon Night Club",
+    url: "/rehber",
     title: "Kıbrıs Night Club Rehberi | Faraon Night Club",
     description: "Kıbrıs gece hayatı ve night club kültürü hakkında detaylı rehber içerikleri.",
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Faraon Night Club Kıbrıs" }],
   },
 };
 
@@ -94,5 +102,24 @@ const categories = [
 ];
 
 export default function RehberPage() {
-  return <RehberClient blogPosts={blogPosts} categories={categories} />;
+  return (
+    <>
+      <JsonLd
+        id="ld-rehber"
+        data={graph(
+          webPageNode({
+            path: "/rehber",
+            type: "CollectionPage",
+            name: "Kıbrıs Night Club Rehberi | Faraon Night Club",
+            description: "Kıbrıs gece hayatı ve night club kültürü hakkında detaylı rehber içerikleri.",
+          }),
+          breadcrumbNode("/rehber", [
+            { name: "Ana Sayfa", path: "/" },
+            { name: "Rehber" },
+          ]),
+        )}
+      />
+      <RehberClient blogPosts={blogPosts} categories={categories} />
+    </>
+  );
 }
