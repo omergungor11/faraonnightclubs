@@ -73,7 +73,7 @@ export function Header() {
               size="sm"
               className="border-gold/50 text-gold hover:bg-gold/10 hover:border-gold bg-transparent"
             >
-              <a href="tel:905338801043">
+              <a href="tel:905428857575">
                 <Phone className="w-4 h-4 mr-2" />
                 Ara
               </a>
@@ -84,7 +84,7 @@ export function Header() {
               className="bg-primary hover:bg-primary/90 text-primary-foreground"
             >
               <a
-                href="https://wa.me/905338801043"
+                href="https://wa.me/905428857575"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -128,7 +128,7 @@ export function Header() {
                 variant="outline"
                 className="flex-1 border-gold/50 text-gold hover:bg-gold/10 bg-transparent"
               >
-                <a href="tel:905338801043">
+                <a href="tel:905428857575">
                   <Phone className="w-4 h-4 mr-2" />
                   Ara
                 </a>
@@ -138,7 +138,7 @@ export function Header() {
                 className="flex-1 bg-primary hover:bg-primary/90 text-primary-foreground"
               >
                 <a
-                  href="https://wa.me/905338801043"
+                  href="https://wa.me/905428857575"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

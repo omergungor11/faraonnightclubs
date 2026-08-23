@@ -124,19 +124,19 @@ export default function HakkimizdaPage() {
               </h2>
               <div className="space-y-4 text-muted-foreground">
                 <p>
-                  Faraon Night Club, 2015 yılında Kıbrıs'ta gece eğlencesine yeni bir soluk getirmek
+                  Faraon Night Club, 2015 yılında Kıbrıs&apos;ta gece eğlencesine yeni bir soluk getirmek
                   amacıyla kuruldu. Vizyonumuz, Kıbrıs night club sektöründe kalite ve prestijin
                   simgesi olmaktı.
                 </p>
                 <p>
-                  Bugün, night club katalog'umuzda yer alan yüzlerce profesyonel performansçımız
+                  Bugün, night club katalog&apos;umuzda yer alan yüzlerce profesyonel performansçımız
                   ve deneyimli ekibimizle, misafirlerimize unutulmaz anlar yaşatıyoruz. Kıbrıs
                   night club deneyiminde Faraon farkını yaşayın.
                 </p>
                 <p>
                   VIP hizmetler, lüks konaklama, özel transfer ve daha fazlası... Faraon Night
                   Club olarak, gece eğlencesinin tüm detaylarını düşünüyoruz. Night club
-                  katalog'umuzu keşfedin ve Kıbrıs'ın en özel gecesini yaşayın.
+                  katalog&apos;umuzu keşfedin ve Kıbrıs&apos;ın en özel gecesini yaşayın.
                 </p>
               </div>
               <div className="flex flex-wrap gap-4 mt-8">
@@ -270,7 +270,7 @@ export default function HakkimizdaPage() {
               Profesyonel Kadromuz
             </h2>
             <p className="max-w-2xl mx-auto mt-4 text-muted-foreground">
-              Faraon Night Club'ın arkasındaki uzman ekip
+              Faraon Night Club&apos;ın arkasındaki uzman ekip
             </p>
           </motion.div>
 
@@ -318,7 +318,7 @@ export default function HakkimizdaPage() {
                     Kıbrıs night club sektöründe en kaliteli hizmeti sunmak ve misafirlerimize
                     unutulmaz deneyimler yaşatmak. Faraon Night Club olarak, her detayı özenle
                     planlıyor ve müşteri memnuniyetini en üst düzeyde tutuyoruz. Night club
-                    katalog'umuzdaki her performansçı, profesyonellik ve kalite standartlarımızı
+                    katalog&apos;umuzdaki her performansçı, profesyonellik ve kalite standartlarımızı
                     yansıtır.
                   </p>
                 </CardContent>
@@ -341,7 +341,7 @@ export default function HakkimizdaPage() {
                     Kıbrıs night club deneyiminde global standartları belirleyen, yenilikçi ve
                     öncü bir marka olmak. Faraon Night Club olarak, teknoloji ve konforun
                     buluştuğu modern bir night club anlayışı sunuyoruz. Kıbrıs night club
-                    katalog'umuz ile sektörde fark yaratmaya devam ediyoruz.
+                    katalog&apos;umuz ile sektörde fark yaratmaya devam ediyoruz.
                   </p>
                 </CardContent>
               </Card>
@@ -362,7 +362,7 @@ export default function HakkimizdaPage() {
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-gold/20 via-transparent to-transparent" />
             <div className="relative z-10">
               <h2 className="mb-4 text-3xl font-bold font-serif md:text-4xl text-white">
-                Faraon Night Club'a Hoş Geldiniz
+                Faraon Night Club&apos;a Hoş Geldiniz
               </h2>
               <p className="max-w-2xl mx-auto mb-8 text-gold-pale/80">
                 Kıbrıs night club deneyiminin en iyisini yaşamak için hemen iletişime geçin.
@@ -382,7 +382,7 @@ export default function HakkimizdaPage() {
                   size="lg"
                   className="text-white border-white/30 hover:bg-white/10 bg-transparent"
                 >
-                  <Link href="/katalog">Katalog'u Keşfedin</Link>
+                  <Link href="/katalog">Katalog&apos;u Keşfedin</Link>
                 </Button>
               </div>
             </div>

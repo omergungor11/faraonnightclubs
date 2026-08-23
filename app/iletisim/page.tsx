@@ -52,16 +52,16 @@ export default function IletisimPage() {
     {
       icon: Phone,
       title: "Telefon",
-      value: "+90 548 XXX XX XX",
+      value: "+90 542 885 75 75",
       description: "7/24 Rezervasyon Hattı",
-      action: "tel:+90548XXXXXXX",
+      action: "tel:+905428857575",
     },
     {
       icon: MessageCircle,
       title: "WhatsApp",
-      value: "+90 548 XXX XX XX",
+      value: "+90 542 885 75 75",
       description: "Hızlı İletişim",
-      action: "https://wa.me/90548XXXXXXX",
+      action: "https://wa.me/905428857575",
     },
     {
       icon: Mail,
@@ -368,7 +368,7 @@ export default function IletisimPage() {
                     Sosyal Medya
                   </h3>
                   <p className="mb-6 text-muted-foreground">
-                    Faraon Night Club'ı sosyal medyada takip edin, Kıbrıs night club
+                    Faraon Night Club&apos;ı sosyal medyada takip edin, Kıbrıs night club
                     etkinliklerinden haberdar olun.
                   </p>
                   <div className="flex gap-4">
@@ -413,7 +413,7 @@ export default function IletisimPage() {
                     size="lg"
                     className="w-full bg-white text-foreground hover:bg-gold/10"
                   >
-                    <a href="tel:+90548XXXXXXX">
+                    <a href="tel:+905428857575">
                       <Phone className="w-4 h-4 mr-2" />
                       Hemen Arayın
                     </a>
@@ -479,7 +479,7 @@ export default function IletisimPage() {
               Konumumuz
             </h2>
             <p className="max-w-2xl mx-auto mt-4 text-muted-foreground">
-              Kıbrıs'ın kalbinde, eşsiz night club deneyimi için Faraon Night Club
+              Kıbrıs&apos;ın kalbinde, eşsiz night club deneyimi için Faraon Night Club
             </p>
           </motion.div>
 

@@ -156,7 +156,7 @@ export default function RehberClient({
                     Kategoriler
                   </h3>
                   <ul className="space-y-3">
-                    {categories.map((category, idx) => (
+                    {categories.map((category) => (
                       <li key={category.name}>
                         <button
                           type="button"
@@ -201,14 +201,14 @@ export default function RehberClient({
                     Rezervasyon Yapın
                   </h3>
                   <p className="text-sm text-gold-pale/70 mb-6">
-                    Kıbrıs night club deneyiminizi hemen planlamak için bize WhatsApp'tan ulaşın.
+                    Kıbrıs night club deneyiminizi hemen planlamak için bize WhatsApp&apos;tan ulaşın.
                   </p>
                   <Button
                     asChild
                     className="w-full bg-gradient-to-r from-gold to-gold-dark hover:from-gold-dark hover:to-gold-dark text-white shadow-lg shadow-gold/20 border-0"
                   >
                     <a
-                      href="https://wa.me/905338801043"
+                      href="https://wa.me/905428857575"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -322,7 +322,7 @@ export default function RehberClient({
                     </h3>
                     <p>
                       <strong className="text-gold/80 font-medium">Kıbrıs night club</strong> sektörü, 
-                      Akdeniz'in en hareketli gece hayatı destinasyonlarından birini oluşturmaktadır. 
+                      Akdeniz&apos;in en hareketli gece hayatı destinasyonlarından birini oluşturmaktadır. 
                       <strong className="text-foreground"> Faraon Night Club</strong>, bu sektörün öncü 
                       isimlerinden biri olarak yıllardır kaliteli hizmet sunmaktadır.
                     </p>
@@ -406,7 +406,7 @@ export default function RehberClient({
                   className="bg-white text-foreground hover:bg-gold/10 h-14 px-8 text-base font-semibold shadow-lg shadow-white/10"
                 >
                   <a
-                    href="https://wa.me/905338801043"
+                    href="https://wa.me/905428857575"
                     target="_blank"
                     rel="noopener noreferrer"
                   >

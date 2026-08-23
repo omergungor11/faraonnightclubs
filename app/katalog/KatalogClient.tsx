@@ -114,7 +114,7 @@ export default function KatalogClient() {
             </div>
 
             <p className="max-w-3xl mx-auto text-lg md:text-xl text-gold-pale/80 leading-relaxed font-light">
-              Kıbrıs'ın en seçkin gece kulüplerini ve en güncel katalog seçeneklerini tek bir platformda toplayan
+              Kıbrıs&apos;ın en seçkin gece kulüplerini ve en güncel katalog seçeneklerini tek bir platformda toplayan
               <strong> Faraon Night Club</strong> ile eğlencenin sınırlarını zorlayın. Size özel VIP hizmetlerimiz 
               ve profesyonel rehberliğimizle gece hayatının keyfini çıkarın.
             </p>
@@ -175,7 +175,7 @@ export default function KatalogClient() {
                     className="w-full bg-gold/10 hover:bg-gold text-gold hover:text-black border border-gold/30 transition-all duration-500 rounded-xl"
                   >
                     <a
-                      href={`https://wa.me/905338801043?text=Merhaba,%20${club.name}%20hakkında%20bilgi%20almak%20istiyorum.`}
+                      href={`https://wa.me/905428857575?text=Merhaba,%20${club.name}%20hakkında%20bilgi%20almak%20istiyorum.`}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center justify-center gap-2"
@@ -200,7 +200,7 @@ export default function KatalogClient() {
               size="lg"
               className="bg-gradient-to-r from-gold to-gold-dark hover:from-gold-dark hover:to-gold-dark text-white font-bold h-14 px-10 rounded-full shadow-xl shadow-gold/20"
             >
-              <a href="https://wa.me/905338801043?text=Merhaba,%20Kıbrıs%20kulüplerinin%20tam%20katalog%20listesini%20talep%20ediyorum." target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/905428857575?text=Merhaba,%20Kıbrıs%20kulüplerinin%20tam%20katalog%20listesini%20talep%20ediyorum." target="_blank" rel="noopener noreferrer">
                 Tüm Kulüpler İçin İletişime Geçin
               </a>
             </Button>
@@ -240,7 +240,7 @@ export default function KatalogClient() {
             <p className="leading-relaxed">
               Gece eğlencesinin zirvesini yaşamak isteyenler için hazırladığımız <strong>Kıbrıs night club katalog</strong> rehberimiz, 
               size en seçkin deneyimleri sunmak üzere özenle tasarlanmıştır. <strong>Faraon Night Club katalog</strong> yelpazesi, 
-              hem ilk defa Kıbrıs'a gelecek misafirlerimizin hem de adanın müdavimlerinin beklentilerini en üst düzeyde karşılamayı hedefler.
+              hem ilk defa Kıbrıs&apos;a gelecek misafirlerimizin hem de adanın müdavimlerinin beklentilerini en üst düzeyde karşılamayı hedefler.
             </p>
             <div className="grid md:grid-cols-2 gap-10 my-12 not-prose">
               <div className="bg-background/50 p-8 rounded-3xl border border-gold/10 shadow-lg">
@@ -250,7 +250,7 @@ export default function KatalogClient() {
                 </h3>
                 <p className="text-muted-foreground leading-relaxed">
                   Profesyonelliği ve gizliliği ön planda tutarak sunduğumuz <strong>night club katalog</strong> bilgilerimiz tamamen günceldir. 
-                  WhatsApp hattımız üzerinden anlık katalog talep ederek Kıbrıs'ın en özel mekanlarına dair detaylara ulaşabilirsiniz.
+                  WhatsApp hattımız üzerinden anlık katalog talep ederek Kıbrıs&apos;ın en özel mekanlarına dair detaylara ulaşabilirsiniz.
                 </p>
               </div>
               <div className="bg-background/50 p-8 rounded-3xl border border-gold/10 shadow-lg">
@@ -265,7 +265,7 @@ export default function KatalogClient() {
               </div>
             </div>
             <p className="leading-relaxed">
-              Kıbrıs'ın eşsiz gece hayatında kendinize en uygun konsepti bulmak için <strong>night club katalog</strong> seçeneklerimizden faydalanın. 
+              Kıbrıs&apos;ın eşsiz gece hayatında kendinize en uygun konsepti bulmak için <strong>night club katalog</strong> seçeneklerimizden faydalanın. 
               Deneyimli ekibimiz, tercihlerinize göre size en doğru yönlendirmeyi yapacak ve unutulmaz bir gece geçirmenizi sağlayacaktır.
             </p>
           </motion.div>
@@ -298,7 +298,7 @@ export default function KatalogClient() {
                   className="bg-gold text-black hover:bg-gold-dark h-14 px-8 text-base font-bold shadow-lg shadow-gold/20"
                 >
                   <a
-                    href="https://wa.me/905338801043?text=Merhaba,%20Kıbrıs%20Night%20Club%20Katalog%20hakkında%20detaylı%20bilgi%20ve%20görsel%20talep%20ediyorum."
+                    href="https://wa.me/905428857575?text=Merhaba,%20Kıbrıs%20Night%20Club%20Katalog%20hakkında%20detaylı%20bilgi%20ve%20görsel%20talep%20ediyorum."
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -312,7 +312,7 @@ export default function KatalogClient() {
                   variant="outline"
                   className="border-white/30 text-white hover:bg-white/10 bg-transparent h-14 px-8 text-base font-bold backdrop-blur-sm"
                 >
-                  <a href="tel:905338801043">
+                  <a href="tel:905428857575">
                     <Phone className="w-5 h-5 mr-2" />
                     Hemen Arayın
                   </a>

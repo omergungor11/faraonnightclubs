@@ -78,12 +78,12 @@ export function HeroSection() {
               className="w-full sm:w-auto border-gold/50 hover:bg-gold/10 hover:border-gold text-lg px-8 py-6 bg-transparent text-primary"
             >
               <a
-                href="https://wa.me/905338801043"
+                href="https://wa.me/905428857575"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={(e) => {
-                  if (typeof window !== 'undefined' && (window as any).gtag_report_conversion) {
-                    (window as any).gtag_report_conversion(e.currentTarget.href);
+                  if (typeof window !== 'undefined' && window.gtag_report_conversion) {
+                    window.gtag_report_conversion(e.currentTarget.href);
                   }
                 }}
               >
@@ -97,7 +97,7 @@ export function HeroSection() {
               variant="outline"
               className="w-full sm:w-auto border-border text-foreground hover:bg-muted text-lg px-8 py-6 bg-transparent"
             >
-              <a href="tel:905338801043">
+              <a href="tel:905428857575">
                 <Phone className="w-5 h-5 mr-2" />
                 Hemen Ara
               </a>

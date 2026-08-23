@@ -104,7 +104,7 @@ export default function NightClubPage() {
                 className="border-gold/50 text-gold hover:bg-gold/10 bg-transparent"
               >
                 <a
-                  href="https://wa.me/905338801043"
+                  href="https://wa.me/905428857575"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -210,7 +210,7 @@ export default function NightClubPage() {
                   }`}
                 >
                   <a
-                    href="https://wa.me/905338801043"
+                    href="https://wa.me/905428857575"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -290,7 +290,7 @@ export default function NightClubPage() {
                 className="bg-primary hover:bg-primary/90 text-primary-foreground"
               >
                 <a
-                  href="https://wa.me/905338801043"
+                  href="https://wa.me/905428857575"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

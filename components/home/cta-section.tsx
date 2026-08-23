@@ -35,7 +35,7 @@ export function CTASection() {
               className="w-full sm:w-auto bg-primary hover:bg-primary/90 text-lg px-8 py-6 text-foreground"
             >
               <a
-                href="https://wa.me/905338801043?text=Merhaba,%20Faraon%20Night%20Club%20hakkında%20bilgi%20almak%20istiyorum."
+                href="https://wa.me/905428857575?text=Merhaba,%20Faraon%20Night%20Club%20hakkında%20bilgi%20almak%20istiyorum."
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -49,9 +49,9 @@ export function CTASection() {
               variant="outline"
               className="w-full sm:w-auto border-gold/50 text-gold hover:bg-gold/10 text-lg px-8 py-6 bg-transparent"
             >
-              <a href="tel:905338801043">
+              <a href="tel:905428857575">
                 <Phone className="w-5 h-5 mr-2" />
-                +90 555 123 45 67
+                +90 542 885 75 75
               </a>
             </Button>
             <Button
